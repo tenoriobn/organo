@@ -1,0 +1,25 @@
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.formulario {
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 782px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  padding: 40px;
+  gap: 28px;
+  box-shadow: 8px 8px 16px rgba(0,0,0, 0.08);
+}

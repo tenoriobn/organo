@@ -1,0 +1,35 @@
+span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.linha-destaque--pequena {
+  width: 32px;
+  border-bottom: 4px solid;
+  margin: 0 auto 24px;
+}
+
+.linha-destaque--grande {
+  width: 64px;
+  border-bottom: 4px solid var(--color-primaria);
+}
+
+.romance {
+  border-color: #82CFFA;
+}
+
+.misterio {
+  border-color: #A6D157;
+}
+
+.fantasia {
+  border-color: #E06B69;
+}
+
+.ficcao-cientifica {
+  border-color: #DB6EBF;
+}
+
+.tecnicos {
+  border-color: #FF8A29;
+}

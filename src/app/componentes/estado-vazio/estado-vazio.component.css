@@ -1,0 +1,12 @@
+.texto-sem-livros img {
+  width: 150px;
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+.texto-sem-livros {
+  text-align: center;
+  margin-top: 16px;
+  color: #3b3b3b;
+  font-size: 20px;
+}

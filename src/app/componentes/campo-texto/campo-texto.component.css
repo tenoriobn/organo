@@ -1,0 +1,38 @@
+.campo-texto label {
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #212121;
+  align-self: flex-start;
+  display: block;
+  margin-bottom: 8px;
+  padding: 20px 0 0;
+  font-size: 21px;
+}
+
+.campo-texto input {
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+  color: #212121;
+  border-radius: 8px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  border: none;
+  font-size: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  outline: none;
+  gap: 10px;
+}
+
+input::placeholder {
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  font-weight: 400;
+  color: #A4A4A4;
+}
+
+.campo-texto {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,20 @@
+<section class="cabecalho">
+  <app-titulo texto="Minhas leituras" />
+  <app-divisor tamanho="linha-destaque--grande" />
+  <app-botao icone="add" rota="/formulario" tipo="submit" texto="Criar novo card" />
+</section>
+
+@for(item of generosComLivros; track item.genero.id) {
+<section class="generos" [ngClass]="item.genero.id">
+  <app-subtitulo [texto]="item.genero.value" />
+  <app-divisor tamanho="linha-destaque--pequena" [classeGenero]="item.genero.id" />
+  @if(item.livros.length === 0) {
+    <app-estado-vazio></app-estado-vazio>
+  }
+  <div class="livros-genero">
+    @for(livro of item.livros; track livro) {
+      <app-livro [livro]="livro" />
+    }
+  </div>
+</section>
+}

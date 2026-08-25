@@ -1,0 +1,34 @@
+select {
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+  color: #212121;
+  border-radius: 8px;
+  font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml,\ <svg fill="%23000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">\<path d="M7 10l5 5 5-5z"></path>\</svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%;
+  background-color: #FFF;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  border: none;
+  font-size: 21px;
+  padding: 24px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+label {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  line-height: 22px;
+  color: #212121;
+  align-self: flex-start;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 21px;
+  padding: 20px 0 0;
+}
+

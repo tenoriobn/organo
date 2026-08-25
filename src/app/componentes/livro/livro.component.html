@@ -1,0 +1,22 @@
+<section [ngClass]="livro().genero.id">
+  <button class="favorito-btn" (click)="alternarFavorito()">
+    <span class="material-icons">{{ livro().favorito ? 'favorite' : 'favorite_border' }}</span>
+  </button>
+  <div class="imagem">
+    <img [src]="livro().imagem" [alt]="livro().titulo">
+  </div>
+  <div class="info-livro">
+    <h2 class="texto-h2">{{ livro().titulo }}</h2>
+    <h3 class="texto-h3">{{ livro().autoria }}</h3>
+  </div>
+  <div class="acoes">
+    <app-botao
+      tipoDeBotao="secundario"
+      texto="Editar"
+      icone="edit" />
+    <app-botao
+      tipoDeBotao="secundario"
+      texto="Excluir"
+      icone="delete" />
+  </div>
+</section>
