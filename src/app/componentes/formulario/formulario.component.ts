@@ -10,6 +10,7 @@ import { BotaoComponent } from '../botao/botao.component';
 import { DivisorComponent } from '../divisor/divisor.component';
 import { TituloComponent } from '../titulo/titulo.component';
 import { SubtituloComponent } from '../subtitulo/subtitulo.component';
+import { LivrosService } from '../../services/livros.service';
 
 @Component({
   selector: 'app-formulario',
@@ -22,26 +23,22 @@ import { SubtituloComponent } from '../subtitulo/subtitulo.component';
     BotaoComponent,
     DivisorComponent,
     TituloComponent,
-    SubtituloComponent
+    SubtituloComponent,
   ],
   templateUrl: './formulario.component.html',
-  styleUrl: './formulario.component.css'
+  styleUrl: './formulario.component.css',
 })
 export class FormularioComponent implements OnInit {
   livroFormulario!: FormGroup;
-  generos: GeneroLiterario[] = [
-    { id: 'romance', value: 'Romance' },
-    { id: 'misterio', value: 'Mistério' },
-    { id: 'fantasia', value: 'Fantasia' },
-    { id: 'ficcao-cientifica', value: 'Ficção Científica' },
-    { id: 'tecnicos', value: 'Técnicos' }
-];
+  generos: GeneroLiterario[] = [];
 
   constructor(
     private formBuilder: FormBuilder,
-  ) { }
+    private livroService: LivrosService,
+  ) {}
 
   ngOnInit() {
+    this.generos = this.livroService.generos;
     this.inicializarlivroFormulario();
   }
 
@@ -52,7 +49,7 @@ export class FormularioComponent implements OnInit {
       autoria: [''],
       favorito: [false],
       genero: [''],
-      imagem: ['']
-    })
-  };
+      imagem: [''],
+    });
+  }
 }
