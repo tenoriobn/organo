@@ -174,7 +174,7 @@
         "id": "romance",
         "value": "Romance"
       },
-      "favorito": false
+      "favorito": true
     },
     {
       "id": "111",
@@ -186,6 +186,17 @@
         "value": "Romance"
       },
       "favorito": false
+    },
+    {
+      "id": "rzKyoke",
+      "titulo": "O programador pragmático",
+      "autoria": "Andrew Hunt e David Thomas",
+      "favorito": false,
+      "genero": {
+        "id": "tecnicos",
+        "value": "Técnicos"
+      },
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidx6z-uHMCKjmnrDRaGQYHwEBJuGN1FWQ163OCJHObA&s=10"
     }
   ]
 }

@@ -3,13 +3,28 @@
   <app-divisor tamanho="linha-destaque--grande" />
 </section>
 <section class="formulario">
-  <form [formGroup]="livroFormulario">
+  <form [formGroup]="livroFormulario" (ngSubmit)="emitirLivroAtualizado()">
     <app-subtitulo texto="Preencha os dados para criar o card do livro" />
     <div>
-      <app-campo-texto label="Título" id="titulo" placeholder="Digite o título do livro" formControlName="titulo" />
-      <app-campo-texto label="Autoria" id="autoria" placeholder="Digite a autoria do livro" formControlName="autoria" />
+      <app-campo-texto
+        label="Título"
+        id="titulo"
+        placeholder="Digite o título do livro"
+        formControlName="titulo"
+      />
+      <app-campo-texto
+        label="Autoria"
+        id="autoria"
+        placeholder="Digite a autoria do livro"
+        formControlName="autoria"
+      />
       <app-lista-suspensa label="Gênero" id="genero" formControlName="genero" />
-      <app-campo-texto label="Imagem" id="imagem" placeholder="Informe o endereço da imagem" formControlName="imagem" />
+      <app-campo-texto
+        label="Imagem"
+        id="imagem"
+        placeholder="Informe o endereço da imagem"
+        formControlName="imagem"
+      />
     </div>
     <app-botao tipo="submit" texto="Salvar" />
   </form>
